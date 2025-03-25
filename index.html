@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사주어플</title>
+    <link rel="stylesheet" href="../css/00_style.css" />
+    <link rel="stylesheet" href="./01-1_휴대폰 메인 로그인.css" />
+  </head>
+  <body>
+    <!-- 헤더 섹션 -->
+    <header>
+      <!-- 왼쪽 로고 -->
+      <div class="logo">
+        <img src="../이미지/팔괘이미지.png" alt="로고" />
+      </div>
+
+      <!-- 사이트 제목 -->
+      <h1 class="site-title">
+        <a href="index.html">신통방통</a>
+      </h1>
+      
+
+      <!-- 로그인 버튼 -->
+      <div id="auth-buttons">
+        <a
+          href="../02_메인 로그인전  사주정보 추가/01_사주정보추가.html"
+          id="login-btn"
+          ><input type="button" value="로그인"
+        /></a>
+        <button id="logout-btn" style="display: none">로그아웃</button>
+      </div>
+    </header>
+
+    <!-- 상단 이미지 -->
+    <div class="main-banner clear"></div>
+
+    <!-- 하단에 체크박스  -->
+    <div class="login-options">
+      <div class="button-container">
+        <a href="../03_로그인후 신년운세보러가기/01_신년운세.html">
+          <button class="button-option">신년운세 보러가기</button>
+        </a>
+        <a href="../04_로그인후 토정비결보러가기/01_토정비결.html">
+          <button class="button-option">토정비결 보러가기</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <main>
+      <!-- 베스트 운세 헤더 -->
+      <h2>베스트 운세</h2>
+
+      <!-- 베스트 운세 체크박스 리스트 -->
+      <div class="fortune-options">
+        <label for="fortune-1">
+          <input type="checkbox" id="fortune-1" />
+          <a href="../03_로그인후 신년운세보러가기/01_신년운세.html"
+            >신년운세</a
+          >
+        </label>
+
+        <label for="fortune-2">
+          <input type="checkbox" id="fortune-2" />
+          <a href="../05_로그인후 평생운세/01_평생운세.html">평생운세</a>
+        </label>
+
+        <label for="fortune-3">
+          <input type="checkbox" id="fortune-3" />
+          <a href="../04_로그인후 토정비결보러가기/01_토정비결.html"
+            >토정비결</a
+          >
+        </label>
+
+        <label for="fortune-4">
+          <input type="checkbox" id="fortune-4" />
+          <a href="../06_로그인후 재물운/01_재물운.html">재물운</a>
+        </label>
+
+        <label for="fortune-5">
+          <input type="checkbox" id="fortune-5" />
+          <a
+            href="../07_로그인후 작명/01_로그인후 작명 정보입력 상세페이지.html"
+            >작명</a
+          >
+        </label>
+
+        <label for="fortune-6">
+          <input type="checkbox" id="fortune-6" />
+          <a href="../08_로그인후 택일/00_택일선택상세페이지.html">택일</a>
+        </label>
+
+        <label for="fortune-7">
+          <input type="checkbox" id="fortune-7" />
+          <a href="../11_타고난 나의 성격/01_타고난 나의 성격.html"
+            >타고난 성격</a
+          >
+        </label>
+
+        <label for="fortune-8">
+          <input type="checkbox" id="fortune-8" />
+          <a href="../12_오늘의운세/01_오늘의운세.html">오늘의 운세</a>
+        </label>
+
+        <label for="fortune-9">
+          <input type="checkbox" id="fortune-9" />
+          <a href="../13_궁합/01_궁합사주입력.html">궁합</a>
+        </label>
+      </div>
+
+      <!-- 소망 섹션 -->
+      <div class="wishes-container">
+        <!-- 첫 번째 소망 입력 -->
+        <div class="wishes1" onclick="toggleInputBox('input-box1')">
+          <p class="pink-text1">소망을 담다</p>
+          <br />
+          <div class="wish-box"></div>
+          <ul>
+            <li>소원성취기원</li>
+            <li>만사형통!</li>
+            <li>이루어져라!</li>
+            <li>바라는 소망</li>
+            <li>빨리 이루어져요</li>
+            <li>소망입력저장</li>
+          </ul>
+          <!-- 팝업 입력창 -->
+          <div id="input-box1" class="input-box">
+            <div id="toggleButton" onclick="toggleInputBox()">
+              "소망을 입력하세요..."
+            </div>
+            <textarea placeholder="소망을 입력하세요..."></textarea>
+            <button onclick="closeInputBox('input-box1', event)">저장</button>
+          </div>
+        </div>
+
+        <!-- 두 번째 소망 입력 -->
+        <div class="wishes2" onclick="toggleInputBox('input-box2')">
+          <p class="pink-text2">고민 해결</p>
+          <br />
+          <div class="wish-box">
+            <ul>
+              <li>임금님 귀는 당나귀 귀!</li>
+              <li>말 못할 고민!</li>
+              <li>머리 아픈일!</li>
+              <li>이곳에서 싹 날려버리기!</li>
+              <li>고민입력저장</li>
+            </ul>
+          </div>
+          <!-- 팝업 입력창 -->
+          <div id="input-box2" class="input-box">
+            <div id="toggleButton" onclick="toggleInputBox()">
+              "고민을 입력하세요..."
+            </div>
+            <textarea placeholder="고민을 임력하세요..."></textarea>
+            <button onclick="closeInputBox('input-box2', event)">저장</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 푸터 섹션 -->
+    <footer>
+      <div class="footer-box">
+        <p>사업자명 : ㅇㅇ</p>
+        <p>사업자 등록 번호 : ㅇㅇㅇ - ㅇㅇ - ㅇㅇㅇㅇㅇ</p>
+        <p>대표 : ㅇㅇㅇ</p>
+        <p>통신판매업 신고 : ㅇㅇㅇㅇㅇ - ㅇㅇㅇㅇ - ㅇㅇㅇㅇ</p>
+        <p>주소 : ㅇㅇㅇ ㅇㅇㅇ ㅇㅇㅇ ㅇㅇㅇ</p>
+        <p>문의 이메일 : ㅇㅇㅇㅇ@ㅇㅇㅇㅇ.ㅇㅇㅇ</p>
+      </div>
+    </footer>
+
+    <!-- jQuery CDN js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./JS/01_휴대폰 메인 로그인(재물운까지).JS"></script>
+    <script src="01_휴대폰 메인 로그인(재물운까지).JS" defer></script>
+  </body>
+</html>
