@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/00_style.css" />
+    <link rel="stylesheet" href="./01_사주정보추가.css" />
+  </head>
+  <body>
+    <div id="page">
+      <!-- 상단 섹션 -->
+      <div id="header">
+        <h1>사주정보 추가</h1>
+      </div>
+
+      <!-- 메인 섹션 -->
+      <div id="main">
+        <form>
+          <!-- 이름 입력 -->
+          <label for="name">이름</label>
+          <input type="text" id="name" placeholder="ㅇㅇㅇ" />
+
+          <!-- 성별 선택 -->
+          <div class="gender-container">
+            <label>성별</label>
+            <input type="radio" id="male" name="gender" value="남자" />
+            <label for="male" class="gender-label">남자</label>
+
+            <input type="radio" id="female" name="gender" value="여자" />
+            <label for="female" class="gender-label">여자</label>
+          </div>
+
+          <!-- 생년월일 입력 -->
+          <label for="dob">생년월일</label>
+          <input type="date" id="dob" name="dob" />
+
+          <!-- 음력/양력/윤달 한 줄 배치 -->
+          <div class="birth-container">
+            <!-- 음력/양력 선택 (라디오 버튼) -->
+            <input type="radio" id="lunar" name="birth_type" value="음력" />
+            <label for="lunar" class="radio-label">음력</label>
+
+            <input type="radio" id="solar" name="birth_type" value="양력" />
+            <label for="solar" class="radio-label">양력</label>
+
+            <!-- 윤달 체크박스 (별도 선택 가능) -->
+            <input
+              type="checkbox"
+              id="leap_month"
+              name="leap_month"
+              value="윤달"
+            />
+            <label for="leap_month" class="checkbox-label">윤달</label>
+          </div>
+
+          <!-- 태어난 시간 입력 -->
+          <label for="birth_time">태어난 시간</label>
+          <input type="time" id="birth_time" name="birth_time" />
+
+          <!-- 관계 입력 -->
+          <label for="relation">관계</label>
+          <select id="relation" name="relation">
+            <option value="본인">본인</option>
+            <option value="배우자">배우자</option>
+            <option value="자녀">자녀</option>
+            <option value="기타">기타</option>
+          </select>
+        </form>
+      </div>
+      <!-- 하단 섹션 -->
+      <div id="footer">
+        <a
+          href="../01_휴대폰 메인페이지/01-1_휴대폰 메인 로그인(재물운까지).html"
+          ><button type="submit">저장하기</button></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

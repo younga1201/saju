@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>작명 정보 입력</title>
+    <link rel="stylesheet" href="../css/00_style.css" />
+    <!-- external CSS 파일 -->
+    <link rel="stylesheet" href="./02_정보입력후 상세페이지.css" />
+  </head>
+  <body>
+    <!-- 상단 박스 -->
+    <div class="top-box">
+      <h1>작명</h1>
+    </div>
+
+    <!-- 둥근 박스 -->
+    <div class="rounded-box">
+      <p>
+        <strong>출생:</strong> 음력 1969년 12월 01일 09시 05분 (평달) 출생한
+        여자
+      </p>
+    </div>
+
+    <!-- 수정할 수 있는 입력 필드 추가 -->
+   
+
+  <!-- 수정하기 박스 -->
+  <div class="editable-box">
+      <h3>수정하기</h3>
+      <label for="birthdate">생년월일:</label>
+      <input type="date" id="birthdate" name="birthdate">
+
+      <label for="calendar">음력/양력/윤달:</label>
+      <select id="calendar" name="calendar">
+          <option value="양력">양력</option>
+          <option value="음력">음력</option>
+          <option value="윤달">윤달</option>
+      </select>
+
+      <label for="birthtime">출생시간:</label>
+      <input type="time" id="birthtime" name="birthtime">
+
+      <button id="save-changes">저장하기</button>
+  </div>
+
+    <!-- 사주 명식 -->
+    <div class="saju-box">
+      <h2>사주 명식</h2>
+      <table>
+        <tr>
+          <td>시주</td>
+          <td>일주</td>
+          <td>월주</td>
+          <td>년주</td>
+        </tr>
+        <tr>
+            <td>火, 불 <br> 丙 <br> 병</td>
+            <td>土, 흙 <br> 戊 <br> 무</td>
+            <td>火, 불 <br> 丁 <br> 정</td>
+            <td>土, 흙 <br> 己 <br> 기</td>
+        </tr>
+        <tr>
+            <td>土, 흙 <br> 辰 <br> 진</td>
+            <td>水, 물 <br> 子 <br> 자</td>
+            <td>土, 흙 <br> 丑 <br> 축</td>
+            <td>金, 금 <br> 酉 <br> 유</td>
+        </tr>
+    </table>
+
+      <h3>사주 오행의 기운</h3>
+      <table>
+        <tr>
+          <td>木</td>
+          <td>火</td>
+          <td>土</td>
+          <td>金</td>
+          <td>水</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>2</td>
+          <td>4</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 수정하기 클릭박스 -->
+    <div class="blessing-box">
+      <label for="blessing">수정하기</label>
+      <input type="checkbox" id="blessing" />
+    </div>
+
+    <!-- 감명하기 버튼 -->
+    <div class="form-group">
+      <a href="./03_감명결과 상세페이지.html"><button id="save-button">감명하기</button></a>
+    </div>
+
+    <!-- jQuery CDN js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <SCript SRC="./js/02_정보입력후 상세페이지.js"></SCript>
+  </body>
+</html>

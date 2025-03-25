@@ -1,0 +1,252 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* 상단 박스 */
+.top-box {
+    background-color: #f0e68c; /* 베이지색 */
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+/* 둥근 박스 스타일 */
+.rounded-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 수정 가능한 입력 박스 */
+.editable-box {
+    display: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* 수정하기 제목과 입력 필드 사이에 여백 추가 */
+.editable-box h3 {
+    margin-bottom: 20px; /* 제목과 아래 요소들 사이의 여백 */
+}
+
+/* 입력 필드 여백 추가 */
+.editable-box label {
+    margin-bottom: 10px; /* 각 입력 필드와 레이블 사이 여백 */
+}
+
+.editable-box input, .editable-box select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.blessing-box {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.blessing-box label {
+    margin-left: 10px;
+}
+
+#blessing:checked + .editable-box {
+    display: block;
+}
+
+/* '변경 사항 저장' 버튼 여백 */
+#save-changes {
+    margin-top: 15px;
+}
+
+/* 수정하기 체크박스 스타일 */
+.blessing-box {
+    margin: 20px;
+}
+
+.editable-box {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.editable-box h3 {
+    margin-left: 10px; /* 좌측 여백 추가 */
+    margin-bottom: 20px;
+}
+
+.editable-box label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.editable-box input,
+.editable-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#save-changes {
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* 사주 명식 */
+.saju-box {
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #000;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.saju-box table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.saju-box table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 수정하기, 감명하기 클릭박스 */
+.blessing-box {
+    text-align: center;
+
+
+    margin-top: 20px; /* 수정하기와 감명하기 박스 사이의 상단 여백 */
+    margin-bottom: 50px; /* 수정하기와 감명하기 박스 사이의 하단 여백 */
+}
+
+
+
+/* 수정하기 박스와 감명하기 박스 사이에 여백 추가 */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* 감명하기 버튼 */
+#save-button {
+    padding: 10px 10px;
+    font-size: 18px;
+    background-color: #8e44ad; /* 보라색 */
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* 100% 너비로 설정하여 좌우 여백 없음 */
+    font-weight: bold;
+    text-align: center;
+    display: block; /* 블록 요소로 변경하여 100% 너비 적용 */
+    position: fixed; /* 고정 위치로 설정 */
+    bottom: 0; /* 화면 하단에 고정 */
+    left: 0; /* 화면 왼쪽 끝에 고정 */
+}
+
+#save-button:hover {
+    background-color: #9b59b6;
+}
+
+/* 체크박스가 선택된 경우 수정하기 박스 표시 */
+#blessing:checked + .editable-box {
+    display: block;
+}
+
+/* 반응형 디자인: 모바일 */
+@media screen and (max-width: 600px) {
+    .top-box {
+        font-size: 1.5rem;
+    }
+
+    .rounded-box {
+        padding: 15px;
+    }
+
+    .editable-box input,
+    .editable-box select {
+        font-size: 14px;
+    }
+
+    #save-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* 반응형 디자인: 태블릿 */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .top-box {
+        font-size: 1.8rem;
+    }
+
+    .rounded-box {
+        padding: 20px;
+    }
+
+    .editable-box input,
+    .editable-box select {
+        font-size: 16px;
+    }
+
+    #save-button {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* 반응형 디자인: PC */
+@media screen and (min-width: 901px) {
+    .top-box {
+        font-size: 2rem;
+    }
+
+    .rounded-box {
+        padding: 30px;
+    }
+
+    .editable-box input,
+    .editable-box select {
+        font-size: 18px;
+    }
+
+    #save-button {
+        font-size: 20px;
+        padding: 18px 40px;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혼인 택일</title>
+    <link rel="stylesheet" href="../css/00_style.css">
+    <link rel="stylesheet" href="./01_혼인택일정보입력.css">
+</head>
+<body>
+
+    <!-- 상단 박스 -->
+    <div class="top-box">
+        <h2>혼인 택일 정보 입력</h2>
+    </div>
+
+    <!-- 혼인 택일 안내 내용 -->
+    <div class="content-box">
+        <div class="guideline">
+            <p>혼인 택일은 아래와 같은 기준으로 <br/>
+                전통으로 가장 많이 쓰이는 <br/>
+                혼인 택일법을 적용합니다</p>
+            <p>혼인을 꺼리는 날은 피하고 <br/>
+                혼인에 길한 날을 택일합니다</p>
+            <p><strong>※ 음력월 적용이 아닌 절기력을 사용하였습니다</strong></p>
+        </div>
+
+        <!-- 남자, 여자 버튼 배치 -->
+        <div class="input-box">
+            <div class="gender-buttons">
+                <button>남자</button>
+            </div>
+            <label for="male-birth">생년월일</label>
+            <input type="date" id="male-birth">
+            <label for="male-time">태어난 시간</label>
+            <input type="time" id="male-time">
+
+            <!-- 음력, 양력, 윤달 선택 박스 -->
+            <div class="selection-box">
+                <select>
+                    <option value="lunar">음력</option>
+                    <option value="solar">양력</option>
+                    <option value="leap">윤달</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <div class="gender-buttons">
+                <button>여자</button>
+            </div>
+            <label for="female-birth">생년월일</label>
+            <input type="date" id="female-birth">
+            <label for="female-time">태어난 시간</label>
+            <input type="time" id="female-time">
+
+            <!-- 음력, 양력, 윤달 선택 박스 -->
+            <div class="selection-box">
+                <select>
+                    <option value="lunar">음력</option>
+                    <option value="solar">양력</option>
+                    <option value="leap">윤달</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+       <!-- 혼인 택일 보기 버튼 (하단) -->
+      <div class="box bottom-box">
+        <a href="./02_혼인택일상세보기.html">혼인 택일 보기</a>           
+    </div>
+</div>
+
+</body>
+</html>

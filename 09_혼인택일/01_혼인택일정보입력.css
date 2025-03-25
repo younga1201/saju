@@ -1,0 +1,148 @@
+  /* 전체 바디 스타일 */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 상단 박스 스타일 */
+.top-box {
+    background-color: #B3B0B0;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* 내용 박스 스타일 */
+.content-box {
+    background-color: rgb(245, 233, 233);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px; /* 상단 고정 박스 때문에 공간을 만듦 */
+}
+
+/* 혼인 택일 안내 문구 스타일 */
+.guideline {
+    margin-top: 100;
+    line-height: 1.6;
+}
+
+.guideline strong {
+    color: black;
+}
+
+/* 버튼 스타일 */
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.button {
+    background-color: #B3B0B0;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* 음력, 양력, 윤달 선택 박스 스타일 */
+.selection-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* 음력, 양력, 윤달 박스 상단 여백 추가 */
+    margin-bottom: 20px; /* 음력, 양력, 윤달 박스 하단 여백 */
+}
+
+.selection-box select {
+    background-color: #B3B0B0;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* 남자, 여자 버튼 스타일 */
+.gender-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 버튼들 사이에 간격 추가 */
+    margin-bottom: 20px; /* 상단에 여백을 주기 위해 margin 추가 */
+}
+
+.gender-buttons button {
+    background-color: #07ca38;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* 하단 박스 스타일 */
+.bottom-box {
+    background-color: purple;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* 모바일 반응형 */
+@media screen and (max-width: 768px) {
+    .content-box {
+        padding: 10px;
+    }
+
+    .button-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-box {
+        margin-bottom: 10px;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+
+    .selection-box {
+        flex-direction: column;
+    }
+
+    .selection-box select {
+        margin-bottom: 10px;
+    }
+
+    .gender-buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .gender-buttons button {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,198 @@
+/* 기본 스타일 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* 상단 박스 스타일 */
+.top-box {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(238, 226, 211);
+    color: black;
+}
+
+.top-box h2 {
+    font-size: 24px;
+}
+
+.top-box .description {
+    font-size: 16px;
+}
+
+/* 달력 박스 스타일 */
+.calendar-box {
+    width: 100%;
+    max-width: 800px; /* PC 화면에서 최대 800px */
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* 달력 헤더 */
+.calendar-header {
+    background-color: #73a4fd;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* 달력 셀 */
+.calendar {
+    display: flex;
+    flex-direction: column;  /* 세로 정렬을 가로로 수정하기 위해 flex-direction을 column으로 수정 */
+    gap: 10px;
+}
+
+/* 각 요일 스타일 */
+.day-header {
+    background-color: #f3d1d1;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    flex: 1; /* 균등 배분 */
+}
+
+/* 각 날짜 스타일 */
+.calendar-row {
+    display: flex;
+    gap: 10px; /* 각 날짜 사이에 간격 추가 */
+    justify-content: center;
+}
+
+.day {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: black;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    flex: 1; /* 1로 균등 배치 */
+    box-sizing: border-box;
+}
+
+/* 날짜에 Hover 효과 */
+.day:hover {
+    background-color: #dcdcdc;
+}
+
+/* 날짜 텍스트 스타일 */
+.day br {
+    display: block;
+    margin-top: 5px;
+}
+
+.day span {
+    font-size: 12px;
+    color: gray;
+}
+
+/* 주말(토, 일) 스타일 */
+.day:nth-child(7), .day:nth-child(1) {
+    background-color: #f0f0f0;
+}
+
+.day:nth-child(7):hover, .day:nth-child(1):hover {
+    background-color: #dcdcdc;
+}
+
+/* 공유하기 버튼 스타일 */
+.share-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8e44ad; /* 보라색 배경 */
+    text-align: center;
+    padding: 8px 0;
+    font-weight: bold;
+    color: black; /* 글자 색 검은색 */
+    font-size: 18px;
+    z-index: 1000; /* 다른 요소들 위에 표시되도록 z-index 설정 */
+}
+
+.share-button button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.share-button button:hover {
+    background-color: #dcdcdc; /* 버튼에 마우스를 올리면 배경 색 변경 */
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+    .calendar-box {
+        max-width: 90%; /* 화면 크기에 맞춰 너비 90%로 설정 */
+        padding: 15px;
+    }
+
+    .calendar-header {
+        font-size: 18px;
+    }
+
+    .calendar-month {
+        font-size: 18px;
+    }
+
+    .day-header {
+        font-size: 14px;
+    }
+
+    .day {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .calendar-box {
+        max-width: 95%; /* 아주 작은 화면에서는 최대 95%로 설정 */
+        padding: 10px;
+    }
+
+    .calendar-header {
+        font-size: 16px;
+    }
+
+    .calendar-month {
+        font-size: 16px;
+    }
+
+    .day-header {
+        font-size: 12px;
+    }
+
+    .day {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

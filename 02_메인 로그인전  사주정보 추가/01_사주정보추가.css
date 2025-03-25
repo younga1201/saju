@@ -1,0 +1,259 @@
+/* 기본적인 스타일 */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* 전체 페이지 레이아웃 */
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: visible;
+}
+
+/* 헤더 스타일 */
+#header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: "Black And White Picture", system-ui;
+}
+
+/* 메인 컨텐츠 */
+#main {
+    flex: 1;
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+/* form 요소 전체 스타일 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;  /* 요소들 사이 간격 추가 */
+}
+
+/* 공통 입력 필드 스타일 */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+    appearance: none;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+/* 포커스 효과 */
+input:focus,
+select:focus {
+    border-color: #388E3C;
+    background-color: #E8F5E9;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+/* 플레이스홀더 스타일 */
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* 라벨 스타일 */
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 성별 선택 */
+.gender-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.gender-container input[type="radio"] {
+    display: none;
+}
+
+.gender-label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    background-color: white;
+}
+
+.gender-label:hover {
+    background-color: #E8F5E9;
+}
+
+.gender-container input[type="radio"]:checked + .gender-label {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* 음력/양력/윤달 한 줄 배치 */
+.birth-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.birth-container input[type="radio"], 
+.birth-container input[type="checkbox"] {
+    display: none;
+}
+
+.radio-label, .checkbox-label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* 음력/양력 버튼 */
+.radio-label {
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.radio-label:hover {
+    background-color: #e8f5e9;
+}
+
+input[type="radio"]:checked + .radio-label {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* 윤달 체크박스 버튼 */
+.checkbox-label {
+    color: #FF9800;
+    border: 2px solid #FF9800;
+}
+
+
+
+.checkbox-label:hover {
+    background-color: #FFF3E0;
+}
+
+input[type="checkbox"]:checked + .checkbox-label {
+    background-color: #FF9800;
+    color: white;
+}
+
+/* 관계 선택 드롭다운 스타일 */
+#relation {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    position: relative;
+}
+
+#relation:focus {
+    border-color: #388E3C;
+    background-color: #E8F5E9;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+#relation::-ms-expand {
+    display: none;
+}
+
+/* 버튼 스타일 */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+/* 하단 섹션 */
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 미디어 쿼리 */
+@media (min-width: 768px) {
+    #main {
+        max-width: 900px;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #main {
+        max-width: 1100px;
+        padding: 40px;
+    }
+}

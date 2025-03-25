@@ -1,0 +1,206 @@
+/* 전체 바디 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* 헤더 스타일 */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white; /* Beige color */
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  /* General section styling */
+.section {
+  margin: 10px; /* Adding 10px margin on all sides */
+  padding: 10px; /* Adding 10px padding on all sides */
+}
+
+/* Styling for the header (h2) */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #facaca;
+}
+
+/* Month input box styling */
+.month-input {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px; /* 10px margin for month input box */
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Media Queries for responsiveness */
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .section {
+      margin: 5px;  /* Reduce margin for mobile */
+      padding: 5px; /* Reduce padding for mobile */
+  }
+
+  h2 {
+      font-size: 1.3rem;
+  }
+
+  input {
+      font-size: 14px; /* Adjust font size for smaller devices */
+  }
+}
+
+/* For tablets and small laptops */
+@media (max-width: 768px) {
+  .section {
+      margin: 10px; /* Keep the margin for tablets */
+      padding: 10px; /* Keep the padding for tablets */
+  }
+
+  h2 {
+      font-size: 1.4rem;
+  }
+
+  input {
+      font-size: 15px; /* Adjust font size for tablets */
+  }
+}
+
+/* For larger screens such as PCs */
+@media (min-width: 769px) {
+  .section {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  input {
+      font-size: 16px; /* Default font size for larger screens */
+  }
+}
+
+  
+  /* Focus effect for inputs */
+  input:focus {
+    border-color: #4CAF50; /* Change border color when focused */
+    outline: none;
+  }
+  
+  /* Placeholder styling */
+  input::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+
+  .month-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .month-list li {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .month-list li:hover {
+    background-color: #45a049;
+  }
+
+  .fortune-category {
+    margin-bottom: 15px;
+}
+
+.fortune-category h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.fortune-category p {
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: purple;
+    color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    table, th, td {
+      font-size: 0.9rem;
+    }
+  
+    .month-list {
+      justify-content: center;
+    }
+  
+    .month-list li {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  

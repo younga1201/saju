@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이사 택일</title>
+    <link rel="stylesheet" href="../css/00_style.css">
+    <link rel="stylesheet" href="./01_이사택일입력상세페이지.css">
+
+    <!-- jQuery CDN js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 상단 이사 택일 입력박스 -->
+        <div class="box b3b0b0">
+            <h3>이사 택일</h3>
+        </div>
+
+        <!-- 전통적인 이사 택일법 -->
+        <div class="box">
+            <p>전통적인 이사 택일법을 적용합니다.</p>
+            <p>이사를 꺼리는 날은 피하고 <br/>
+                이사에 길한 날을 택일합니다.</p>
+            <p>※ 음력월 적용이 아닌 <br/>
+                절기력을 사용하였습니다.</p>
+        </div>
+
+        <!-- 성별 선택 -->
+        <div class="box">
+            <label><strong>성별</strong></label>
+            <div class="gender-buttons">
+                <button class="gender-button">남자</button>
+                <button class="gender-button">여자</button>
+            </div>
+        </div>
+
+        <!-- 생년월일 입력 -->
+        <div class="box">
+            <label>생년월일</label>
+            <input type="text" placeholder="19691201">
+            <div class="date-buttons">
+                <!-- 버튼에 class="date-button" 추가 -->
+                <button class="date-button">음력</button>
+                <button class="date-button">양력</button>
+                <button class="date-button">윤달</button>
+            </div>
+        </div>
+
+        <!-- 태어난 시간 입력 -->
+        <div class="box">
+            <label>태어난 시간</label>
+            <input type="text" placeholder="00:00">
+        </div>
+
+        <!-- 이사 방향 선택 박스 -->
+        <div class="box b3b0b0">
+            <label>이사 방향</label>
+            <select>
+                <option>동</option>
+                <option>남동</option>
+                <option>북동</option>
+                <option>서</option>
+                <option>남서</option>
+                <option>북서</option>
+                <option>남</option>
+                <option>남서</option>
+                <option>남동</option>
+                <option>북</option>
+                <option>북서</option>
+                <option>북동</option>
+            </select>
+        </div>
+
+        <!-- 이사 택일 보기 박스 -->
+        <div class="box bottom-box">
+            <a href="./02_이사택일 결과보기 상세페이지.html">이사 택일 보기</a>           
+        </div>
+    </div>
+
+    <!-- jQuery 코드 -->
+    <script>
+        $(document).ready(function() {
+            // 성별 버튼 클릭 이벤트
+            $(".gender-button").click(function() {
+                // 모든 버튼의 색을 초기화
+                $(".gender-button").css("background-color", "#06b13f");
+
+                // 클릭한 버튼의 색을 #8e44ad로 변경
+                $(this).css("background-color", "#8e44ad");
+            });
+
+            // 날짜 버튼 클릭 이벤트 (음력, 양력, 윤달)
+            $(".date-button").click(function() {
+                // 모든 버튼의 배경색을 기본색으로 초기화
+                $(".date-button").css("background-color", "#06b13f");
+
+                // 클릭한 버튼의 배경색을 #8e44ad로 변경
+                $(this).css("background-color", "#8e44ad");
+            });
+        });
+    </script>
+</body>
+</html>

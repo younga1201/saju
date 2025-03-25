@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>작명 정보 입력</title>
+    <!-- 외부 CSS 파일 링크 (올바른 경로와 파일 확장자 사용) -->
+    <link rel="stylesheet" href="../css/00_style.css" />
+    <link rel="stylesheet" href="./01_로그인후 작명 정보입력 상세페이지.css" />
+  </head>
+  <body>
+    <!-- 헤더 섹션 -->
+    <header>
+      <h1>작명 정보 입력</h1>
+    </header>
+    <div class="container">
+      <!-- 상단 텍스트 박스 -->
+      <div class="intro-box">
+        <p>이름보다 중요한 것이 있을까?</p>
+        <p>
+          이름은 한사람의 운명에 <br/>
+          영향력이 있는 매우 중요한 <br/>
+          기운으로 작용합니다.
+        </p>
+        <p>
+          좋은 이름으로 작명을 하는 것은 <br/>
+          그사람의 운로를 좋은 방향으로 <br/>
+          바꾸며 심리적으로도 긍정적인 <br/>
+          영향으로 작용합니다.
+        </p>
+      </div>
+
+      <!-- 성별 -->
+      <div class="form-group">
+        <label for="gender">성별</label>
+        <div class="button-group">
+          <button id="male" class="select-button">남자</button>
+          <button id="female" class="select-button">여자</button>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="birthdate">생년월일</label>
+        <div class="button-group">
+          <input type="date" id="birthdate" name="birthdate" />
+          <select id="calendar" name="calendar">
+            <option value="양력">양력</option>
+            <option value="음력">음력</option>
+            <option value="윤달">윤달</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="birthtime">태어난 시간</label>
+        <div class="button-group">
+          <input type="time" id="birthtime" name="birthtime" />
+          <button id="unknown-time" class="select-button">시간모름</button>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="name">이름 선택</label>
+        <div class="button-group">
+          <button id="single-name" class="select-button">외자 (이름 한글자)</button>
+          <button id="double-name" class="select-button">복성 (성이 두글자)</button>
+        </div>
+      </div>
+      
+      
+
+      <!-- 저장하기 버튼 -->
+      <div class="form-group">
+        <a href="./02_정보입력후 상세페이지.html"
+          ><button id="save-button">저장하기</button></a
+        >
+      </div>
+    </div>
+
+    <!-- jQuery CDN js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/01_로그인후 작명 정보입력 상세페이지.js"></script>
+  </body>
+</html>

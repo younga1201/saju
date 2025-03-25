@@ -1,0 +1,89 @@
+/* 전체 페이지 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 상단 박스 스타일 */
+.header {
+    background-color: #f5e3a1; /* 베이지 색 */
+    font-weight: bold;
+    text-align: center; /* 글자 중앙 정렬 */
+    padding: 20px;
+}
+
+/* 기본 박스 스타일 */
+.box {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 한글, 한자, 오행 등 입력박스 스타일 */
+.input-box {
+    background-color: #fff; /* 기본 배경색 */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.input-box-b3b0b0 {
+    background-color: #f0e6e6; /* B3B0B0 배경색 */
+    color: black;
+}
+
+.input-box h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-box span {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* 출력 박스 스타일 */
+.output-box {
+    background-color: #b3b0b0;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* 하단 공유하기 박스 스타일 */
+.footer {
+    background-color: #8a2be2; /* 보라색 */
+    color: white;
+    text-align: center; /* 글자 중앙 정렬 */
+    padding: 15px;
+    font-weight: bold;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+    .box {
+        margin: 10px;
+        padding: 15px;
+    }
+    .input-box, .output-box {
+        padding: 10px;
+    }
+}
