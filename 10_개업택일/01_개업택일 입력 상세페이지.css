@@ -1,0 +1,186 @@
+/* 전체 바디 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 각 섹션의 제목 (성별, 생년월일, 태어난 시간 등) */
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 15px 0; /* 상하 여백 */
+    text-align: left;
+    padding-left: 10px; /* 좌측 여백 */
+}
+
+/* 상단 고정 개업 택일 박스 */
+.consultation-box {
+    background-color: #B3B0B0;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* 개업 택일 설명 박스 */
+.info-box1 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 60px; /* 상단 고정 박스 공간 */
+}
+
+.info-box2 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px; /* 상단 고정 박스 공간 */
+}
+
+/* 성별 선택 버튼 */
+.gender-selection {
+    display: flex;
+    justify-content: center; /* 버튼들을 수평 중앙 정렬 */
+    gap: 10px; /* 버튼 사이의 간격 */
+    margin-top: 10px;
+}
+
+.gender-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(2, 138, 25);
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* 버튼이 고르게 분배되도록 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 생년월일 입력과 버튼 */
+.birthdate-selection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.birthdate-selection input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar-btns {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.calendar-btn {
+    padding: 8px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background-color: rgb(3, 124, 43);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 태어난 시간 입력 */
+.time-selection {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.time-selection input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 개업 택일 보기 버튼 */
+.bottom-box {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    background-color: purple;
+    color: black;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 20px; /* 상단 박스와 겹치지 않게 여백 추가 */
+}
+
+
+/* 링크 버튼 Hover 효과 */
+.bottom-box .link-button:hover {
+    background-color: purple;
+}
+
+/* 모바일 및 태블릿 반응형 */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 16px;
+    }
+
+    .gender-btn {
+        width: 45%;
+        font-size: 14px;
+    }
+
+    .birthdate-selection input,
+    .time-selection input {
+        width: 90%;
+    }
+
+    .calendar-btn {
+        padding: 6px 18px;
+        font-size: 14px;
+    }
+
+    .bottom-box {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .bottom-box .link-button {
+        font-size: 14px;
+    }
+}
+
+/* PC 반응형 */
+@media screen and (min-width: 1024px) {
+    .gender-btn {
+        width: 20%;
+    }
+
+    .birthdate-selection input {
+        width: 80%;
+    }
+
+    .calendar-btn {
+        font-size: 16px;
+    }
+}

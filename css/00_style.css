@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+:root {
+    /* Color styles */
+    --black: rgba(0, 0, 0, 1);
+    --grayscale-90: rgba(28, 28, 30, 1);
+    --grayscale-80: rgba(44, 44, 46, 1);
+    --grayscale-70: rgba(54, 54, 57, 1);
+    --grayscale-60: rgba(72, 72, 74, 1);
+    --grayscale-50: rgba(99, 99, 102, 1);
+    --grayscale-40: rgba(142, 142, 147, 1);
+    --grayscale-30: rgba(174, 174, 178, 1);
+    --grayscale-20: rgba(198, 198, 198, 1);
+    --grayscale-10: rgba(244, 244, 244, 1);
+    --white: rgba(255, 255, 255, 1);
+    --blue-light-10: rgba(233, 241, 255, 1);
+    --blue-light-20: rgba(202, 222, 255, 1);
+    --blue-light-30: rgba(15, 98, 254, 1);
+    --blue-light-40: rgba(15, 86, 219, 1);
+    --blue-light-50: rgba(8, 71, 189, 1);
+    --blue-dark-10: rgba(69, 137, 255, 1);
+    --blue-dark-20: rgba(39, 103, 221, 1);
+    --blue-dark-30: rgba(27, 79, 175, 1);
+    --blue-dark-40: rgba(36, 50, 75, 1);
+    --blue-dark-50: rgba(32, 39, 52, 1);
+    --red-light-30: rgba(218, 30, 40, 1);
+    --red-light-40: rgba(186, 27, 35, 1);
+    --red-light-50: rgba(117, 14, 19, 1);
+    --red-dark-30: rgba(198, 52, 60, 1);
+    --red-dark-40: rgba(161, 43, 49, 1);
+    --red-dark-50: rgba(125, 27, 32, 1);
+    --green-light-30: rgba(52, 199, 89, 1);
+    --green-light-40: rgba(34, 163, 67, 1);
+    --green-dark-30: rgba(91, 189, 116, 1);
+    --green-dark-40: rgba(70, 149, 90, 1);
+
+    /* Text-size styles */
+    --h1: 36px;
+    --h2: 24px;
+    --h3: 18px;
+    --h4: 16px;
+    --body: 14px;
+    --button: 14px;
+    --caption-1: 12px;
+    --caption-2: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", "Noto Sans KR", serif;
+}
+a {text-decoration: none;color: var(--black);}
+li {display: block; list-style-type: none;}

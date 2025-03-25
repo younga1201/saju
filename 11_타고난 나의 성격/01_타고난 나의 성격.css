@@ -1,0 +1,167 @@
+/* 기본 스타일 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 상단 박스 */
+.top-box {
+    background-color: beige; /* 바탕색 베이지 */
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-box h2 {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+/* 상단과 시주, 일주, 월주, 년주 사이의 여백 */
+main {
+    margin-top: 100px; /* 상단 박스 아래로 충분한 여백을 주어야 내용이 겹치지 않음 */
+}
+
+/* 헤더 스타일 */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* 표 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 75px; /* 상단과 표 사이에 여백을 추가 */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #facaca;
+}
+
+/* 시주, 일주, 월주, 년주 박스 */
+.characteristics-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px; /* 시주, 일주, 월주, 년주 박스와 다른 콘텐츠 사이 여백 추가 */
+    gap: 20px;
+}
+
+.characteristics {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.characteristics h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.characteristics p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* 월 입력 박스 스타일 */
+.month-input {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px; /* 10px 여백 */
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+/* 입력박스 스타일 */
+.input-box {
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.input-box input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.input-box label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 공유하기 버튼 */
+.share-button {
+    background-color: purple;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px; /* 상단 여백 추가 */
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    /* 시주, 일주, 월주, 년주 박스를 세로로 배치 */
+    .characteristics-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .characteristics {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* 입력박스 너비를 더 좁혀서 모바일 화면에 맞춤 */
+    .input-box {
+        width: 90%;
+    }
+}

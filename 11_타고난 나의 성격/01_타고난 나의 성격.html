@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성격 분석</title>
+    <link rel="stylesheet" href="../css/00_style.css">
+    <link rel="stylesheet" href="./01_타고난 나의 성격.css">
+</head>
+<body>
+    <!-- 타고난 나의 성격 상단 박스 -->
+    <div class="top-box">
+        <h2>타고난 나의 성격</h2>
+    </div>
+
+    <table>
+        <!-- 년월일시주 섹션 -->
+        <tbody>
+           <!-- 천간 섹션 -->
+        <tr>
+          <td style="background-color:rgb(248, 165, 56); color: black;">시주</td>
+          <td style="background-color:rgb(248, 165, 56); color: black;">일주</td>
+          <td style="background-color:rgb(248, 165, 56); color: black;">월주</td>
+          <td style="background-color:rgb(248, 165, 56); color: black;">년주</td>
+        </tr>
+
+           <!-- 천간 육친 섹션 -->
+          <tr>
+            <td style="background-color:beige; color: black;">편인</td>
+            <td style="background-color:beige; color: black;">일원</td>
+            <td style="background-color:beige; color: black;">정인</td>
+            <td style="background-color:beige; color: black;">겁재</td>
+          </tr>
+          <!-- 천간 오행과 천간글자 섹션 -->
+          <tr>
+            <td style="background-color: red; color: black;">丙 (병)</td>
+            <td style="background-color: yellow; color: black;">戊 (무)</td>
+            <td style="background-color: red; color: black;">丁 (정)</td>
+            <td style="background-color: yellow; color: black;">己 (기)</td>
+          </tr>
+          <!-- 지지 오행과 지지글자 섹션 -->
+          <tr>
+            <td style="background-color: yellow; color: black;">辰 (진)</td>
+            <td style="background-color: black; color: white;">子 (자)</td>
+            <td style="background-color: yellow; color: black;">丑 (축)</td>
+            <td style="background-color: white; color: black;">酉 (유)</td>
+          </tr>
+          
+           <!-- 지지 육친 섹션 -->
+           <tr>
+            <td style="background-color:beige; color: black;">편인</td>
+            <td style="background-color:beige; color: black;">일원</td>
+            <td style="background-color:beige; color: black;">정인</td>
+            <td style="background-color:beige; color: black;">겁재</td>
+          </tr>
+          
+          <!-- 지간 섹션 -->
+          <tr>
+            <td style="background-color: rgb(248, 165, 56); color: black;">시지</td>
+            <td style="background-color: rgb(248, 165, 56); color: black;">일지</td>
+            <td style="background-color: rgb(248, 165, 56); color: black;">월지</td>
+            <td style="background-color: rgb(248, 165, 56); color: black;">년지</td>
+          </tr>
+
+          
+        </tbody>
+          </table>
+
+
+    <!-- 겉으로 보이는 나의 성격 -->
+    <div class="input-box">
+        <label for="outward-character">겉으로 보이는 나의 성격</label>
+        <input type="text" id="outward-character" placeholder="입력하세요">
+    </div>
+
+    <!-- 내면의 나의 성격 -->
+    <div class="input-box">
+        <label for="inner-character">내면의 나의 성격</label>
+        <input type="text" id="inner-character" placeholder="입력하세요">
+    </div>
+
+   <!-- 공유하기 버튼 -->
+<div class="share-button">
+    공유하기
+</div>
+
+</body>
+</html>

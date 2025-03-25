@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.top-box {
+    background-color: #B3B0B0;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.person-box {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    width: 48%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.person-box h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-box {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px; /* 기본 여백 */
+}
+
+.result-input {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px; /* 입력란의 패딩을 늘려 크기를 키움 */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    height: 200px; /* 높이를 키워서 더 많은 내용이 입력 가능하도록 함 */
+}
+
+.bottom-box {
+    background-color: #9987FD;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* PC (큰 화면) */
+@media (min-width: 1200px) {
+    .main-content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .person-box {
+        width: 48%; /* 각 박스가 화면의 48% 차지 */
+    }
+
+    textarea {
+        height: 200px;
+    }
+}
+
+/* 테이블릿 (중간 화면) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .person-box {
+        width: 48%;
+    }
+
+    textarea {
+        height: 180px;
+    }
+}
+
+/* 모바일 (작은 화면) */
+@media (max-width: 767px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center; /* 화면이 좁아지면 중앙 정렬 */
+    }
+
+    .person-box {
+        width: 90%; /* 화면이 좁을 때 박스 너비 90%로 조정 */
+        margin: 10px 0;
+    }
+
+    textarea {
+        height: 150px;
+        padding: 12px;
+    }
+
+    .top-box, .bottom-box {
+        padding: 10px 0;
+    }
+
+    .result-box {
+        font-size: 16px;
+    }
+
+    .bottom-box {
+        position: relative;
+        margin-top: 20px;
+    }
+}

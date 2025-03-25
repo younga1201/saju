@@ -1,0 +1,113 @@
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gaude', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* 컨테이너 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 박스 스타일 */
+.box {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.header-box {
+    background-color: #B3B0B0;
+    color: black;
+    font-weight: bold;
+}
+
+.male-box, .female-box {
+    background-color: #B3B0B0;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-box {
+    background-color: #9987FD;
+    color: black;
+    font-weight: bold;
+}
+
+/* 이름 입력 박스 */
+.name-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 입력 박스 스타일 */
+.input-box {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.date-input, .time-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .name-input, .date-input, .time-input {
+        font-size: 14px;
+    }
+
+    .footer-box p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        padding: 10px;
+    }
+
+    .name-input, .date-input, .time-input {
+        font-size: 12px;
+    }
+
+    .footer-box p {
+        font-size: 16px;
+    }
+
+    .input-box label {
+        font-size: 14px;
+    }
+}

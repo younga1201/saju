@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사주 정보 입력</title>
+    <link rel="stylesheet" href="./css/01_궁합사주입력.css">
+    <link rel="stylesheet" href="../css/00_style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 상단 박스 -->
+        <div class="box header-box">
+            <p>궁합 사주 정보 입력</p>
+        </div>
+
+        <!-- 남자 박스 -->
+        <div class="box male-box">
+            <p>남자</p>
+            <input type="text" placeholder="이름" class="name-input">
+            
+            <!-- 생년월일 입력 박스 -->
+            <div class="input-box">
+                <label for="birthdate-male">생년월일</label>
+                <input type="date" id="birthdate-male" class="date-input">
+            </div>
+
+            <!-- 태어난 시간 입력 박스 -->
+            <div class="input-box">
+                <label for="time-birth-male">태어난 시간</label>
+                <input type="time" id="time-birth-male" class="time-input">
+            </div>
+        </div>
+
+        <!-- 여자 박스 -->
+        <div class="box female-box">
+            <p>여자</p>
+            <input type="text" placeholder="이름" class="name-input">
+            
+            <!-- 생년월일 입력 박스 -->
+            <div class="input-box">
+                <label for="birthdate-female">생년월일</label>
+                <input type="date" id="birthdate-female" class="date-input">
+            </div>
+
+            <!-- 태어난 시간 입력 박스 -->
+            <div class="input-box">
+                <label for="time-birth-female">태어난 시간</label>
+                <input type="time" id="time-birth-female" class="time-input">
+            </div>
+        </div>
+
+        <!-- 하단 박스 -->
+        <div class="box footer-box">
+            <a href="./02_궁합상세페이지.html"><p>궁합 보러 가기</p></a>
+        </div>
+    </div>
+
+    <script src="./JS/01_궁합사주입력.js"></script>
+</body>
+</html>
